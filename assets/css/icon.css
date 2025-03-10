@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.icon {
+    display               : inline-block;
+    height                : 1em;
+    width                 : 1em;
+    mask-size             : contain;
+    -webkit-mask-size     : contain;
+    mask-repeat           : no-repeat;
+    -webkit-mask-repeat   : no-repeat;
+    mask-position         : center;
+    -webkit-mask-position : center;
+    font-size             : 20px;
+    background-color: #FFCF01;
+
+
+}
+
+
+.person  {
+    mask-image: url(../img/person.svg);
+    -webkit-mask-image: url(../img/person.svg);
+}
+
+.icon-clock  {
+    mask-image: url(../img/clock.svg);
+    -webkit-mask-image: url(../img/clock.svg);
+}
+
+.liners-left  {
+    mask-image: url(../img/liners-left.svg);
+    -webkit-mask-image: url(../img/liners-left.svg);
+}
+
+.calendar  {
+    mask-image: url(../img/calendar.svg);
+    -webkit-mask-image: url(../img/calendar.svg);
+}
+.arrow-triangle  {
+    mask-image: url(../img/arrow-triangle.svg);
+    -webkit-mask-image: url(../img/arrow-triangle.svg);
+}
+.icon-task  {
+    mask-image: url(../img/icon-task.svg);
+    -webkit-mask-image: url(../img/icon-task.svg);
+}

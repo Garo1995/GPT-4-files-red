@@ -1,0 +1,237 @@
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: 0.4s;
+    background: #1010190D;
+    backdrop-filter: blur(25px)
+
+}
+.sticky {
+    background: #0C0C17;
+}
+.header-cnt{
+    padding: 30px 0;
+    transition: 0.4s;
+    gap: 30px;
+}
+.sticky .header-cnt{
+    padding: 20px 0;
+}
+
+.nav-menu{
+    width: 100%;
+}
+.head-menu{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.head-menu ul{
+    gap: 25px;
+}
+.menu-scroll li{
+    display: flex;
+}
+.menu-scroll a{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+}
+.menu-scroll a:hover{
+    color: #FA4E4E;
+}
+.menu-scroll a:active{
+    color: #FA4E4E;
+
+}
+
+.header-btn{
+    gap: 10px;
+}
+
+.btn-login{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: 0.3s;
+    background: unset;
+    border: 1px solid #282828;
+    border-radius: 12px;
+    padding: 11px 31px;
+}
+.btn-login:hover, .btn-login:active{
+    box-shadow: 0px 0px 33px 0px #FFCF014D;
+    background: #FFCF01;
+    color: #0C0C17;
+}
+.btn-register{
+    background: #FFCF01;
+    border-radius: 10px;
+    padding: 12px 31px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color: #0C0C17;
+    transition: 0.3s;
+}
+.btn-register:hover, .btn-register:active{
+    box-shadow: 0px 0px 33px 0px #FFCF014D;
+    background: #FFCF01;
+
+}
+.open-menu{
+    display: none;
+    position: relative;
+    z-index: 9999;
+}
+
+.close-menu span {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.close-menu span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 7px;
+}
+.close-menu span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+.close-menu span:nth-child(3){
+    display: none;
+}
+.body_fix{
+    overflow: hidden;
+}
+.body_fix:before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 25, 25, 0.6);
+
+    z-index: 11;
+    transition: 0.3s;
+    backdrop-filter: blur(5px)
+
+}
+
+@media (max-width: 1199px){
+    .header-cnt {
+        padding: 25px 0;
+    }
+    .menu-scroll a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-register {
+        padding: 12px 25px;
+        font-size: 12px;
+    }
+    .header-cnt {
+        padding: 20px 0;
+    }
+    .logo {
+        gap: 15px;
+    }
+    .logo-fon{
+        width: 30px;
+        height: 30px;
+        padding: 7.5px;
+        border-radius: 8px;
+    }
+    .logo span {
+        font-size: 15px;
+    }
+    .open-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        transition: 0.3s;
+        height: 24px;
+        width: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-cnt {
+        padding: 19px 0;
+    }
+    .sticky .header-cnt{
+        padding: 19px 0;
+    }
+    .open-menu span{
+        display: flex;
+        background: #FFFFFF;
+        width: 24px;
+        height: 3px;
+        border-radius: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    .nav-menu {
+        width: 100%;
+        height: 0;
+        position: fixed;
+        z-index: 9999;
+        top: 70px;
+        left: 0;
+        transition: 0.5s;
+        overflow: hidden;
+        flex-direction: column;
+        background: #0C0C17;
+        justify-content: center;
+        gap: 40px;
+    }
+    .transition-menu {
+        height: 500px;
+        -webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    .head-menu ul {
+        gap: 23px;
+        flex-direction: column;
+    }
+    .menu-scroll a {
+        font-size: 16px;
+        line-height: 21.12px;
+    }
+    .head-menu {
+        flex: unset;
+    }
+    .header-btn {
+        gap: 14px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-btn button{
+        max-width: 220px;
+        width: 100%;
+    }
+    .btn-login {
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+}
+
